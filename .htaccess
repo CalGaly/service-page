@@ -4,4 +4,4 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.calgaly.com
-RewriteRule ^(.*) http://calgaly.com/$1 [R=301,L]
+RewriteRule ^(.*) https://calgaly.com/$1 [R=301,L]
