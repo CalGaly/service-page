@@ -1,25 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDRWRSZV8W"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-YDRWRSZV8W');
+      gtag("config", "G-YDRWRSZV8W");
     </script>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet" />
 
     <title>サービス - CalGaly</title>
-    <link rel="shortcut icon" href="img/CalGaly ファビコン.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/CalGaly ファビコン.png" type="image/x-icon" />
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .custom-card-button {
         position: relative;
       }
@@ -33,236 +41,246 @@
 
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
-        <div class="container">
-          <a class="navbar-brand m-0" href="index.html">
-            <img src="img/CalGaly.jpg" width="180" height="45" alt="CalGaly">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse  justify-content-end" id="navbar-content">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="index.html#campaign" class="nav-link">キャンペーン</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#plan" class="nav-link">プラン・料金</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#guide" class="nav-link">ご利用の流れ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#access" class="nav-link">アクセス</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">サービス</a>
-                </li>
-                <li class="nav-item">
-                    <a href="terms.html" class="nav-link">規約</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#contact" class="nav-link">お問い合わせ</a>
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand m-0" href="index.html">
+          <img src="img/CalGaly.jpg" width="180" height="45" alt="CalGaly" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html#info" class="nav-link">お知らせ</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#plan" class="nav-link">プラン・料金</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#guide" class="nav-link">利用の流れ</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#access" class="nav-link">アクセス</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> サービス </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#add">追加サービス</a>
+                <a class="dropdown-item" href="delivery.html">配送</a>
+                <a class="dropdown-item" href="#storage">保管</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#notice" class="nav-link">注意事項</a>
+            </li>
+            <li class="nav-item">
+              <a href="terms.html" class="nav-link">規約</a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link active">よくあるご質問</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">お問い合わせ</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <main>
+      <nav class="container" aria-label="breadcrumb">
+        <ol class="breadcrumb container bg-transparent border-bottom">
+          <li class="breadcrumb-item">
+            <a href="index.html">トップ</a>
+          </li>
+          <li class="breadcrumb-item active">サービス</li>
+        </ol>
+      </nav>
 
-        <nav class="container" aria-label="breadcrumb">
-            <ol class="breadcrumb container bg-transparent border-bottom">
-                <li class="breadcrumb-item">
-                    <a href="index.html">トップ</a>
-                </li>
-                <li class="breadcrumb-item active">
-                    サービス
-                </li>
-            </ol>
-        </nav>
+      <div class="py-4">
+        <section id="add">
+          <div class="container">
+            <h3 class="mb-4">サービス</h3>
 
-
-        <div class="py-4">
-            <section id="add">
-                <div class="container">
-                    <h5 class="mb-4"><u><strong>追加サービス</strong></u></h5>
-                    <div class="card-columns">
-                        <div class="card border-black">
-                            <div class="card-body">
-                                <h5 class="card-title">ホットワックス</h5>
-                                <h5 class="card-text text-right">¥1,000円(税込)</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">工程1.ブラシクリーニング</li>
-                                    <li class="list-group-item">工程2.ホットワックス</li>
-                                    <li class="list-group-item">工程3.スクレーピング</li>
-                                    <li class="list-group-item">工程4.ブラシ仕上げ</li>
-                                </ul>
-                                <p class="card-text">※ご指定のワックスがありましたら一緒に預けていただくようお願いいたします。</p>
-                            </div>
-                        </div>
-                        <div class="card border-black">
-                            <div class="card-body">
-                                <h5 class="card-title">保管アイテム追加<br>(エントリープラン対象外)</h5>
-                                <h5 class="card-text text-right">Ａ：¥2,000円(税込)/1点<br>Ｂ：¥1,000円(税込)/1点</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Ａ：板(ポール含む) 、ブーツ</li>
-                                    <li class="list-group-item">Ｂ：小物(ケース、ヘルメット等)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card border-black">
-                            <div class="card-body">
-                              <h5 class="card-title">配送</h5>
-                              <h5 class="card-text text-right mb-4">発送希望日の2日前まで対応</h5>
-                              <p>ご自宅、スキー場、ホテルなどご希望の場所まで配送します。</p>
-                              <div class="mb-3">
-                                <a href="delivery.html" class="btn btn-outline-secondary" role="button"><strong>詳しくはこちらから</strong></a>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card border-black">
-                            <div class="card-body">
-                              <h5 class="card-title">ベースワックス<br>(エントリープラン対象外)</h5>
-                              <h5 class="card-text text-right">¥3,000円(税込)</h5>
-                              <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">工程1.クリーニング</li>
-                                  <li class="list-group-item">工程2.ベースワックス</li>
-                                  <li class="list-group-item">工程3.スクレーピング</li>
-                                  <li class="list-group-item">工程4.工程2と工程3を繰り返し(計3回)</li>
-                                  <li class="list-group-item">工程5.ブラシ仕上げ</li>
-                              </ul>
-                              <p class="card-text">※ご指定のワックスがありましたら一緒に預けていただくようお願いいたします。</p>
-                            </div>
-                        </div>
-                    </div>
+            <h4 class="mb-3 p-1 font-weight-bold">追加サービス</h4>
+            <div class="card-columns">
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">ホットワックス</h5>
+                  <h5 class="card-text text-right">¥1,000円(税込)</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">工程1.ブラシクリーニング</li>
+                    <li class="list-group-item">工程2.ホットワックス</li>
+                    <li class="list-group-item">工程3.スクレーピング</li>
+                    <li class="list-group-item">工程4.ブラシ仕上げ</li>
+                  </ul>
+                  <p class="card-text">※ご指定のワックスがありましたら一緒に預けていただくようお願いいたします。</p>
+                  <p class="card-text">※性質上、滑走面にはワックスの色が付着します。</p>
                 </div>
-            </section>
-        </div>
-
-        <div class="py-4">
-            <section id="off">
-                <div class="container">
-                    <h5 class="mb-4"><u><strong>オフシーズンサービス</strong></u></h5>
-                    <div class="card-columns">
-                        <div class="card border-black">
-                            <div class="card-body">
-                                <h5 class="card-title">チューンナップ</h5>
-                                <h5 class="card-text text-right">¥5,000円(税込)</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">工程1.ソールリペア</li>
-                                    <li class="list-group-item">工程2.ソールサンディング</li>
-                                    <li class="list-group-item">工程3.エッジサンディング</li>
-                                    <li class="list-group-item">工程4.ホットワックス</li>
-                                </ul>
-                                <p class="card-text">※広い傷のリペア、修理が必要な場合は別途追加料金がかかります。</p>
-                            </div>
-                        </div>
-                        <div class="card border-black">
-                            <div class="card-body">
-                                <h5 class="card-title">チューンナップオプション</h5>
-                                <h5 class="card-text text-right">Ａ：＋¥1,000円(税込)<br>Ｂ：＋¥2,000円(税込)<br>Ｃ：＋¥2,000円(税込)</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Ａ：エッジ角度指定</li>
-                                    <li class="list-group-item">Ｂ：ストラクチャー仕上げ（クロスストラクチャー）</li>
-                                    <li class="list-group-item">Ｃ：ワックスフューチャー</li>
-                                </ul>
-                                <p class="card-text">※Ａ1：ベースエッジ指定角度（0.5／1.0／1.5／2.0）</p>
-                                <p class="card-text">※Ａ2：サイドエッジ指定角度（89／88／87／86／85）</p>
-                                <p class="card-text">※Ｂ ：歪み・形状により、ストラクチャーが部分的に掛からない場合がございます。</p>
-                            </div>
-                        </div>
-                        <div class="card border-black">
-                            <div class="card-body">
-                                <h5 class="card-title">保管用ホットワックス</h5>
-                                <h5 class="card-text text-right">¥1,000円(税込)</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">工程1.ブラシクリーニング</li>
-                                    <li class="list-group-item">工程2.リムーバークリーニング</li>
-                                    <li class="list-group-item">工程3.ホットワックス</li>
-                                    <li class="list-group-item">工程4.スクレーピング&ブラシ仕上げ</li>
-                                </ul>
-                                <p class="card-text">※工程4は、次回お引取り前に行います。</p>
-                            </div>
-                        </div>
-                        <div class="card border-black">
-                            <div class="card-body">
-                              <h5 class="card-title">各種クリーニング</h5>
-                              <h5 class="card-text text-right">Ａ：¥3,000円(税込)<br>Ｂ：¥2,000円(税込)<br>Ｃ：¥1,000円(税込)</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Ａ：ウェア上下セット</li>
-                                    <li class="list-group-item">Ｂ：ブーツインナー1組</li>
-                                    <li class="list-group-item">Ｃ：小物(グローブ、ビーニー等)1点</li>
-                                </ul>
-                                <p class="card-text">※全て「抗ウイルス・抗細菌加工」込みの料金です。</p>
-                                <p class="card-text">※Ａ：撥水加工 +¥1,000円(税込)</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">保管アイテム追加<br />(エントリープラン対象外)</h5>
+                  <h5 class="card-text text-right">Ａ：¥2,000円(税込)/1点<br />Ｂ：¥1,000円(税込)/1点</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ａ：板(ポール含む) 、ブーツ</li>
+                    <li class="list-group-item">Ｂ：小物(ケース、ヘルメット等)</li>
+                  </ul>
                 </div>
-            </section>
-        </div>
-      
-        <div class="container">
-            <div class="row">
-                <div class="py-4 col-sm-4">
-                <section id="maint">
-                    <h5 class="mb-4"><u><strong>メンテナンス</strong></u></h5>
-                    <div class="container">
-                        <img src="img/service/メンテナンス.jpg" width="300" height="300" alt="" class="mb-4">
-                        <h5>ワックス ／ クリーニング</h5>
-                        <p>スキー・スノーボードの上達と、大切な道具を長持ちさせるためには欠かせません。</p>
-                        <p>元スキーショップのチューンナップスタッフが一台一台手作業にて仕上げます。</p>
-                        <p>弊社では、ガリウム社プロショップ用ワックスを使用しています。</p>
-                    </div>
-                </section>
+              </div>
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">配送</h5>
+                  <h5 class="card-text text-right mb-4">通常料金の最大40%引き</h5>
+                  <div class="mb-3">
+                    <a href="delivery.html" class="btn btn-outline-secondary" role="button"><strong>詳しくはこちらから</strong></a>
+                  </div>
+                  <p>ご自宅、スキー場、ホテルなどご希望の場所まで割引価格で配送いたします。</p>
                 </div>
-
-                <div class="py-4  col-sm-4">
-                <section id="storage">
-                    <h5 class="mb-4"><u><strong>保管</strong></u></h5>
-                    <div class="container">
-                        <img src="img/service/保管.jpg" width="300" height="300" alt="" class="mb-4">
-                        <h5>保管 ／ 管理</h5>
-                        <p>約2,000台収納可能な自社倉庫で、カビや虫食い、日焼けからあなたの大切な道具を守ります。</p>
-                        <p>専任スタッフが、保管環境の温度・湿度をしっかりと管理し、防犯・セキュリティ対策も万全です。</p>
-                        <p>イオンの効果で、カビ菌の除菌や増殖を抑制に加え、臭いの原因となる菌の作用を抑制します。</p>
-                    </div>
-                </section>
+              </div>
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">ベースワックス<br />(エントリープラン対象外)</h5>
+                  <h5 class="card-text text-right">¥3,000円(税込)</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">工程1.クリーニング</li>
+                    <li class="list-group-item">工程2.ベースワックス</li>
+                    <li class="list-group-item">工程3.スクレーピング</li>
+                    <li class="list-group-item">工程4.工程2と工程3を繰り返し(計3回)</li>
+                    <li class="list-group-item">工程5.ブラシ仕上げ</li>
+                  </ul>
+                  <p class="card-text">※ご指定のワックスがありましたら一緒に預けていただくようお願いいたします。</p>
                 </div>
-
-                <div class="py-4 col-sm-4">
-                <section id="insurance">
-                    <h5 class="mb-4"><u><strong>保険</strong></u></h5>
-                    <div class="container">
-                        <img src="img/service/保険.jpg" width="300" height="300" alt="" class="mb-4">
-                        <h5>保険 ／ 補償</h5>
-                        <p>万が一、運送中や保管中の破損・紛失等の事故などが起きた場合は、1点につき時価額までの補償がございます。<br>※時価額：購入金額や使用年数を考慮した現在の価値。</p>
-                        <p>保険料はプラン料金に含まれ、プランお申込みと同時に保険が適応されます。</p>
-                    </div>
-                </section>
-                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
+      </div>
 
+      <!-- <div class="py-4">
+        <section id="off">
+          <div class="container">
+            <h5 class="mb-4">
+              <u><strong>オフシーズンサービス</strong></u>
+            </h5>
+            <div class="card-columns">
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">チューンナップ</h5>
+                  <h5 class="card-text text-right">¥5,000円(税込)</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">工程1.ソールリペア</li>
+                    <li class="list-group-item">工程2.ソールサンディング</li>
+                    <li class="list-group-item">工程3.エッジサンディング</li>
+                    <li class="list-group-item">工程4.ホットワックス</li>
+                  </ul>
+                  <p class="card-text">※広い傷のリペア、修理が必要な場合は別途追加料金がかかります。</p>
+                </div>
+              </div>
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">チューンナップオプション</h5>
+                  <h5 class="card-text text-right">Ａ：＋¥1,000円(税込)<br />Ｂ：＋¥2,000円(税込)<br />Ｃ：＋¥2,000円(税込)</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ａ：エッジ角度指定</li>
+                    <li class="list-group-item">Ｂ：ストラクチャー仕上げ（クロスストラクチャー）</li>
+                    <li class="list-group-item">Ｃ：ワックスフューチャー</li>
+                  </ul>
+                  <p class="card-text">※Ａ1：ベースエッジ指定角度（0.5／1.0／1.5／2.0）</p>
+                  <p class="card-text">※Ａ2：サイドエッジ指定角度（89／88／87／86／85）</p>
+                  <p class="card-text">※Ｂ ：歪み・形状により、ストラクチャーが部分的に掛からない場合がございます。</p>
+                </div>
+              </div>
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">保管用ホットワックス</h5>
+                  <h5 class="card-text text-right">¥1,000円(税込)</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">工程1.ブラシクリーニング</li>
+                    <li class="list-group-item">工程2.リムーバークリーニング</li>
+                    <li class="list-group-item">工程3.ホットワックス</li>
+                    <li class="list-group-item">工程4.スクレーピング&ブラシ仕上げ</li>
+                  </ul>
+                  <p class="card-text">※工程4は、次回お引取り前に行います。</p>
+                </div>
+              </div>
+              <div class="card border-black">
+                <div class="card-body">
+                  <h5 class="card-title">各種クリーニング</h5>
+                  <h5 class="card-text text-right">Ａ：¥3,000円(税込)<br />Ｂ：¥2,000円(税込)<br />Ｃ：¥1,000円(税込)</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ａ：ウェア上下セット</li>
+                    <li class="list-group-item">Ｂ：ブーツインナー1組</li>
+                    <li class="list-group-item">Ｃ：小物(グローブ、ビーニー等)1点</li>
+                  </ul>
+                  <p class="card-text">※全て「抗ウイルス・抗細菌加工」込みの料金です。</p>
+                  <p class="card-text">※Ａ：撥水加工 +¥1,000円(税込)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> -->
+
+      <div class="container">
+        <div class="row">
+          <div class="py-4 col-sm-4">
+            <section id="storage">
+              <h4 class="mb-3 p-1 font-weight-bold">保管</h4>
+              <div class="container">
+                <img src="img/service/保管.jpg" width="300" height="300" alt="" class="mb-4" />
+                <h5>保管 ／ 管理</h5>
+                <p>約2,000台収納可能な自社倉庫で、カビや虫食い、日焼けからあなたの大切な道具を守ります。</p>
+                <p>専任スタッフが、保管環境の温度・湿度をしっかりと管理し、防犯・セキュリティ対策も万全です。</p>
+                <p>イオンの効果で、カビ菌の除菌や増殖を抑制に加え、臭いの原因となる菌の作用を抑制します。</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="py-4 col-sm-4">
+            <section id="maint">
+              <h4 class="mb-3 p-1 font-weight-bold">メンテナンス</h4>
+              <div class="container">
+                <img src="img/service/メンテナンス.jpg" width="300" height="300" alt="" class="mb-4" />
+                <h5>ワックス ／ クリーニング</h5>
+                <p>スキー・スノーボードの上達と、大切な道具を長持ちさせるためには欠かせません。</p>
+                <p>元スキーショップのチューンナップスタッフが一台一台手作業にて仕上げます。</p>
+                <p>弊社では、ガリウム社プロショップ用ワックスを使用しています。</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="py-4 col-sm-4">
+            <section id="insurance">
+              <h4 class="mb-3 p-1 font-weight-bold">保険</h4>
+              <div class="container">
+                <img src="img/service/保険.jpg" width="300" height="300" alt="" class="mb-4" />
+                <h5>保険 ／ 補償</h5>
+                <p>万が一、運送中や保管中の破損・紛失等の事故などが起きた場合は、1点につき時価額までの補償がございます。<br />※時価額：購入金額や使用年数を考慮した現在の価値。</p>
+                <p>保険料はプラン料金に含まれ、プランお申込みと同時に保険が適応されます。</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="pt-4">
-        <div class="container text-right">
-            <h2>CalGaly</h2>
-            <h6 class="mr-1">スキー・スノーボード<br />保管&配送サービス</h6>
-            <p><small>Copyright 2020 CalGaly</small></p>
-        </div>
+      <div class="container text-right">
+        <h1 style="font-family: 'Montserrat'">CalGaly</h1>
+        <h6 class="mr-1">スキー・スノーボード<br />保管&配送サービス</h6>
+        <p><small>Copyright 2020 CalGaly</small></p>
+      </div>
     </footer>
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-        $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
-            if(this.id != 'navbarDropdown'){
-                $('.navbar-collapse').collapse('hide');
-            }
-        });
+      $(".navbar-nav>li>a , .dropdown-menu>a").on("click", function () {
+        if (this.id != "navbarDropdown") {
+          $(".navbar-collapse").collapse("hide");
+        }
+      });
     </script>
-
   </body>
 </html>
