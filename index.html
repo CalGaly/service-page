@@ -45,6 +45,10 @@
     <meta property="og:image" content="img/CalGaly ロゴ.jpg" />
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       .custom-card-button {
         position: relative;
       }
@@ -52,6 +56,15 @@
       section {
         margin-top: -75px;
         padding-top: 75px;
+      }
+
+      img {
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-touch-callout: none;
+        -moz-user-select: none;
+        user-select: none;
       }
     </style>
   </head>
@@ -77,16 +90,27 @@
               <a href="#plan" class="nav-link">プラン・料金</a>
             </li>
             <li class="nav-item">
-              <a href="#guide" class="nav-link">ご利用の流れ</a>
+              <a href="#guide" class="nav-link">利用の流れ</a>
             </li>
             <li class="nav-item">
               <a href="#access" class="nav-link">アクセス</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> サービス </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="service.html">追加サービス</a>
+                <a class="dropdown-item" href="delivery.html">配送</a>
+                <a class="dropdown-item" href="service.html#storage">保管</a>
+              </div>
+            </li>
             <li class="nav-item">
-              <a href="service.html" class="nav-link">サービス</a>
+              <a href="#notice" class="nav-link">注意事項</a>
             </li>
             <li class="nav-item">
               <a href="terms.html" class="nav-link">規約</a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">よくあるご質問</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link">お問い合わせ</a>
@@ -167,7 +191,7 @@
                   <p>紹介した方、紹介された方、両方に<strong>ホットワックス</strong>をサービスいたします。</p>
                   <p>紹介キャンペーン利用の流れ</p>
                   <ol>
-                    <li>紹介する相手にご自分のお客様番号(預かり表記載)を伝える。</li>
+                    <li>紹介する相手にご自分の「お客様番号(預かり表記載)」を伝える。<br />※お客様番号が付与させていない場合には、ご自分の「LINEの名前」をお伝えください。</li>
                     <li>紹介された方がお申し込み後、お支払いを済ませる。</li>
                     <li>紹介していただいたあなたと、紹介された方にホットワックスをサービス。</li>
                   </ol>
@@ -203,7 +227,7 @@
       <div class="py-4">
         <section id="about">
           <div class="container">
-            <h3 class="mb-3 text-muted">身軽を気軽にカルガリー</h3>
+            <h3 class="my-4 text-center text-muted font-weight-bold">身軽を気軽にカルガリー</h3>
             <p>CalGaly(カルガリー)は、スキー・スノーボード一式の年間保管、配送、メンテナンスをするサービスです。<br />スキーヤー、スノーボーダーに快適なスノーライフを提供します。</p>
             <div class="mb-4">
               <h5><span class="badge badge-secondary">ポイント1</span></h5>
@@ -223,7 +247,7 @@
         <section id="plan">
           <div class="container">
             <h5 class="mb-4">
-              <u><strong>プラン</strong></u>
+              <u><strong>3つのプラン</strong></u>
             </h5>
             <div class="card-deck">
               <div class="card shadow">
@@ -306,61 +330,61 @@
             </h5>
             <div class="row mb-5 px-3">
               <div class="col-sm-8">
-                <h5 class="mb-3 p-2 mark">Step.1 公式LINEから申込み</h5>
-                <p>CalGaly公式LINEを登録後、お申込みフォームが送信されます。記入例を参考にお申込みください。</p>
-                <div class="mb-3">
-                  <a href="https://line.me/R/ti/p/%40xry5037y" class="btn btn-outline-success" role="button"><strong>CalGaly公式LINE</strong></a>
+                <h5 class="mb-3 p-2 mark">Step.1 お申込み</h5>
+                <p>CalGaly公式LINEを登録し、申込みフォームから行います。</p>
+                <div class="mb-3 ml-3">
+                  <a href="guide.html#subscription-line" class="btn btn-outline-secondary" role="button"><strong>申込みガイド</strong></a>
                 </div>
-                <p>※LINEをご利用でない方は<a href="#contact" class="text-primary">お問い合わせ</a>からご連絡ください。メールでの対応になります。</p>
-                <div class="mb-3">
-                  <a href="guide.html" class="btn btn-outline-secondary" role="button"><strong>詳しいお申込み方法</strong></a>
-                </div>
+                <p>※LINEをご利用でない方はメールからお申し込みください。<br /><a href="guide.html#subscription-mail" class="text-primary">メールでの申込みはこちら</a></p>
               </div>
               <div class="col-sm-4 text-center">
-                <img src="img/index/step1.png" width="200" height="200" alt="利用手順１" />
+                <img src="img/index/step1,3.png" width="200" height="200" alt="利用手順1" />
               </div>
             </div>
             <div class="row mb-5 px-3">
               <div class="col-sm-8">
-                <h5 class="mb-3 p-2 mark">Step.2 預ける</h5>
-                <p>申込み時に送信した日時にお店へ行き、荷物を預ける。</p>
-                <a href="#access" class="btn btn-outline-dark" role="button"><strong>アクセス</strong></a>
-              </div>
-              <div class="col-sm-4 text-center">
-                <img src="img/index/step2.png" width="200" height="200" alt="" />
-              </div>
-            </div>
-            <div class="row mb-5 px-3">
-              <div class="col-sm-8">
-                <h5 class="mb-3 p-2 mark">Step.3 引取り日時、次回預け日時を連絡</h5>
-                <p><strong>・引取り日時</strong><br /><u>原則お引取りの2日前までに</u>日時を公式LINEにご連絡ください。</p>
-                <p><strong>・次回預け日時</strong><br />引取り日時を指定する際に次回預ける日時が確定されていましたら引取り日時と共にご連絡ください。<br />※次回預け日時が未定の場合は確定次第ご連絡ください。</p>
-                <p><strong>・追加サービス</strong><br />「ホットワックス」など追加サービスをご希望される場合もご連絡ください。</p>
-                <div class="mb-3">
-                  <a href="guide.html" class="btn btn-outline-secondary" role="button"><strong>詳しい利用予約方法</strong></a>
+                <h5 class="mb-3 p-2 mark">Step.2 お預け</h5>
+                <p>申込み時に送信した利用開始日に直接来店または、配送で荷物を預ける。</p>
+                <div class="col">
+                  <a href="#access" class="btn btn-outline-dark mr-3" role="button"><strong>アクセス</strong></a>
+                  <a href="delivery.html" class="btn btn-outline-dark" role="button"><strong>　配送　</strong></a>
                 </div>
               </div>
               <div class="col-sm-4 text-center">
-                <img src="img/index/step3.png" width="200" height="200" alt="" />
+                <img src="img/index/step2.png" width="200" height="200" alt="利用手順2" />
               </div>
             </div>
             <div class="row mb-5 px-3">
               <div class="col-sm-8">
-                <h5 class="mb-3 p-2 mark">Step.4 引き取り</h5>
-                <p>Step３でご連絡いただいた日時にお店へ行き、保管しているアイテムを引き取る。<br />しっかりとメンテナンスされた道具でお楽しみください。</p>
-                <a href="#access" class="btn btn-outline-dark" role="button"><strong>アクセス</strong></a>
+                <h5 class="mb-3 p-2 mark">Step.3 ご利用予約</h5>
+                <p>
+                  <strong><u>原則お引取りの2日前まで</u></strong
+                  >にCalGaly公式LINEの利用予約フォームから予約を行います。
+                </p>
+                <div class="mb-3 ml-3">
+                  <a href="guide.html#reserve-line" class="btn btn-outline-secondary" role="button"><strong>利用予約ガイド</strong></a>
+                </div>
               </div>
               <div class="col-sm-4 text-center">
-                <img src="img/index/step4.png" width="200" height="200" alt="" />
+                <img src="img/index/step1,3.png" width="200" height="200" alt="利用手順3" />
               </div>
             </div>
             <div class="row mb-5 px-3">
               <div class="col-sm-8">
-                <h5 class="mb-3 p-2 mark">Step.5 身軽に冬を過ごす</h5>
-                <p>Step.3でご連絡いただいた日時にお店へ行き、荷物を預ける。<br />快適にシーズンをお過ごしください。</p>
+                <h5 class="mb-3 p-2 mark">Step.4 お引取り</h5>
+                <p>ご予約いただいた日時に来店または、配送で荷物を引き取る。<br />しっかりとメンテナンスされた道具でお楽しみください。</p>
               </div>
               <div class="col-sm-4 text-center">
-                <img src="img/index/step5.png" width="200" height="200" alt="" />
+                <img src="img/index/step4.png" width="200" height="200" alt="利用手順4" />
+              </div>
+            </div>
+            <div class="row mb-5 px-3">
+              <div class="col-sm-8">
+                <h5 class="mb-3 p-2 mark">Step.5 快適にシーズンを過ごす</h5>
+                <p>滑り終わった後、荷物を預ける。<br />メンテナンスはおまかせして身軽にお帰りください。</p>
+              </div>
+              <div class="col-sm-4 text-center">
+                <img src="img/index/step5.png" width="200" height="200" alt="利用手順5" />
               </div>
             </div>
           </div>
@@ -374,6 +398,7 @@
               <u><strong>直営店舗</strong></u>
             </h5>
             <p><u>CalGalyユーザーは、どちらの店舗もご利用いただけます。</u></p>
+            <p>全国のスキー場、宿泊施設まで割引価格で配送できます。<a href="delivery.html" class="text-primary">詳細はこちらから</a></p>
             <div class="nav nav-tabs nav-fill" id="tab-menus" role="tablist">
               <a class="nav-item nav-link active" id="tab-menu01" data-toggle="tab" href="#panel-menu01" role="tab" aria-controls="panel-menu01" aria-selected="true"><strong>越後湯沢駅</strong></a>
               <a class="nav-item nav-link" id="tab-menu02" data-toggle="tab" href="#panel-menu02" role="tab" aria-controls="panel-menu02" aria-selected="false"><strong>かぐらスキー場</strong></a>
@@ -484,6 +509,23 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="py-4">
+        <section id="notice">
+          <div class="container">
+            <h5 class="mb-3">
+              <u><strong>注意事項</strong></u>
+            </h5>
+            <ul class="px-4">
+              <li class="mb-2">ご本人様以外の保管アイテムのお引取りはできません。</li>
+              <li class="mb-2">予約がないご利用につきましては対応いたしかねます。必ず利用予約を行ってからご利用ください。</li>
+              <li class="mb-2">保管される道具の状態により、保管をお断りする場合がございます。</li>
+              <li class="mb-2">連日利用の場合には、十分に乾燥できない可能性があります。あらかじめご了承ください。</li>
+              <li>配送をご利用予定の方は、ケースも含めてお預けいただく必要あります。</li>
+            </ul>
           </div>
         </section>
       </div>
